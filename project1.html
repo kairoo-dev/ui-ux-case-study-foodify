@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodify – Étude de cas UI/UX</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Your<span>Logo</span></div>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html#home">Accueil</a>
+        <a href="index.html#projects">Projets</a>
+        <a href="#overview">Étude de cas</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Changer la navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Case Study Hero -->
+  <section class="case-hero" id="overview">
+    <div class="container case-hero-container">
+      <div>
+        <p class="hero-intro">Étude de cas UI/UX</p>
+        <h1 class="hero-title smaller">Foodify – Application de livraison de repas</h1>
+        <p class="hero-subtitle">
+          Concevoir une manière plus rapide et plus claire de commander des repas sur mobile.
+        </p>
+      </div>
+
+      <div class="case-hero-meta">
+        <div>
+          <span class="meta-label">Rôle</span>
+          <span class="meta-value">UX Research, UI Design, Prototypage</span>
+        </div>
+        <div>
+          <span class="meta-label">Durée</span>
+          <span class="meta-value">3 semaines</span>
+        </div>
+        <div>
+          <span class="meta-label">Outils</span>
+          <span class="meta-value">Figma, FigJam</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Main -->
+  <section class="section section-alt">
+    <div class="container">
+
+      <!-- Problem & Goal -->
+      <div class="case-grid">
+        
+        <!-- Problem -->
+        <div class="case-block">
+          <h2 class="case-section-title">1. Problème</h2>
+          <p>
+            Les utilisateurs ont du mal à découvrir rapidement des repas abordables
+            qui correspondent à leurs préférences (régime, temps, budget) sur plusieurs applications de livraison.
+          </p>
+          <p>
+            Les frais cachés, les paiements trop longs et les filtres complexes
+            créent de la frustration et mènent à l’abandon du panier.
+          </p>
+        </div>
+
+        <!-- Goal -->
+        <div class="case-block">
+          <h2 class="case-section-title">2. Objectif</h2>
+          <p>
+            Concevoir une expérience mobile qui aide les utilisateurs à :
+          </p>
+          <ul class="case-list">
+            <li>Trouver un repas adapté en moins de <strong>3 minutes</strong>.</li>
+            <li>Comprendre le coût total (frais de livraison inclus) dès le début.</li>
+            <li>Commander à nouveau leurs favoris en quelques clics.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Research & Persona -->
+      <div class="case-grid">
+
+        <!-- Research -->
+        <div class="case-block">
+          <h2 class="case-section-title">3. Recherche</h2>
+          <ul class="case-list">
+            <li>Entretiens avec 5 utilisateurs réguliers (18–30 ans).</li>
+            <li>Petit questionnaire (12 réponses) sur les habitudes de commande.</li>
+            <li>Analyse des concurrents : Uber Eats, DoorDash, Glovo.</li>
+          </ul>
+          <p>Principaux points de douleur :</p>
+          <ul class="case-list">
+            <li>Filtres compliqués et navigation confuse.</li>
+            <li>Frais de livraison visibles uniquement à la fin.</li>
+            <li>Trop d’étapes dans le processus de paiement.</li>
+          </ul>
+        </div>
+
+        <!-- Persona -->
+        <div class="case-block">
+          <h2 class="case-section-title">4. Persona Utilisateur</h2>
+          <p><strong>Nom :</strong> Sara, 24 ans, étudiante très occupée</p>
+          <ul class="case-list">
+            <li>Commande 3–4 fois par semaine.</li>
+            <li>Cherche des repas rapides et abordables.</li>
+            <li>Commande souvent dans les mêmes restaurants.</li>
+            <li>Utilise souvent les promotions et réductions.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- User Flow -->
+      <div class="case-block">
+        <h2 class="case-section-title">5. Parcours Utilisateur</h2>
+        <p>
+          J’ai cartographié le parcours principal pour garder un minimum d’étapes :
+        </p>
+        <ul class="case-list">
+          <li>Onboarding → Définir les préférences (régime, budget, délai).</li>
+          <li>Accueil → Choisir une catégorie ou une recommandation.</li>
+          <li>Détails du repas → Personnaliser & voir le coût total.</li>
+          <li>Paiement → Confirmer l’adresse & le paiement → Commander.</li>
+          <li>Favoris → Commander à nouveau en 2 clics.</li>
+        </ul>
+
+        <div class="image-row">
+          <img
+            src="https://via.placeholder.com/900x260?text=User+Flow+Diagram"
+            alt="Diagramme du parcours utilisateur"
+            class="case-image wide"
+          />
+        </div>
+      </div>
+
+      <!-- Wireframes -->
+      <div class="case-block">
+        <h2 class="case-section-title">6. Wireframes (basse fidélité)</h2>
+        <p>
+          J’ai commencé avec des wireframes basse-fidélité pour valider la structure
+          et la navigation avant d’ajouter les styles visuels.
+        </p>
+
+        <div class="image-grid">
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=Wireframe+-+Onboarding"
+              alt="Wireframe Onboarding" class="case-image" />
+            <figcaption>Onboarding – définir les préférences</figcaption>
+          </figure>
+
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=Wireframe+-+Home"
+              alt="Wireframe Home" class="case-image" />
+            <figcaption>Accueil – catégories rapides & recommandations</figcaption>
+          </figure>
+
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=Wireframe+-+Checkout"
+              alt="Wireframe Checkout" class="case-image" />
+            <figcaption>Paiement – étapes simplifiées</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- UI Design -->
+      <div class="case-block">
+        <h2 class="case-section-title">7. Design UI</h2>
+        <p>
+          Le style visuel est propre et chaleureux avec une palette chaude,
+          des cartes arrondies et une hiérarchie typographique claire.
+        </p>
+        <ul class="case-list">
+          <li>Couleur principale : <strong>#FF6B3D</strong> pour les boutons & accents.</li>
+          <li>Arrière-plan neutre pour mettre en valeur les photos des plats.</li>
+          <li>Typographie optimisée pour une lecture rapide.</li>
+        </ul>
+
+        <div class="image-grid">
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=UI+-+Home+Screen"
+              alt="UI Home" class="case-image" />
+            <figcaption>Accueil – catégories & recommandations</figcaption>
+          </figure>
+
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=UI+-+Meal+Details"
+              alt="UI Meal Details" class="case-image" />
+            <figcaption>Détails du repas – personnalisation & prix</figcaption>
+          </figure>
+
+          <figure class="case-figure">
+            <img src="https://via.placeholder.com/400x750?text=UI+-+Checkout"
+              alt="UI Checkout" class="case-image" />
+            <figcaption>Paiement – résumé clair</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Prototype -->
+      <div class="case-block">
+        <h2 class="case-section-title">8. Prototype interactif</h2>
+        <p>
+          J’ai créé un prototype interactif Figma couvrant l’onboarding,
+          l’accueil, la recherche, les détails du repas et le paiement.
+        </p>
+
+        <a href="https://www.figma.com/" target="_blank" class="btn primary-btn small-btn">
+          Voir le prototype sur Figma
+        </a>
+
+        <div class="prototype-embed">
+          <iframe
+            title="Prototype Foodify"
+            src="https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_PROTOTYPE_LINK_HERE"
+            allowfullscreen></iframe>
+          <p class="embed-note">
+            Remplacez <strong>YOUR_FIGMA_PROTOTYPE_LINK_HERE</strong> par votre lien réel Figma.
+          </p>
+        </div>
+      </div>
+
+      <!-- Results & Learnings -->
+      <div class="case-grid">
+
+        <div class="case-block">
+          <h2 class="case-section-title">9. Résultats</h2>
+          <ul class="case-list">
+            <li>5/5 utilisateurs ont terminé la commande en moins de 3 minutes.</li>
+            <li>Le parcours de paiement est passé de 6 à 4 étapes.</li>
+            <li>Les utilisateurs ont ressenti plus de confiance grâce à la transparence des frais.</li>
+          </ul>
+        </div>
+
+        <div class="case-block">
+          <h2 class="case-section-title">10. Apprentissages</h2>
+          <ul class="case-list">
+            <li>Afficher les frais tôt réduit la frustration.</li>
+            <li>Une navigation simple et cohérente rassure les utilisateurs.</li>
+            <li>Tester tôt en low-fi fait gagner du temps avant le high-fi.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Back to Projects -->
+      <div class="case-block back-link-block">
+        <a href="index.html#projects" class="project-link">
+          ← Retour aux projets
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> Your Name. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#" target="_blank">Behance</a>
+        <a href="#" target="_blank">Dribbble</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio_script.js"></script>
+
+</body>
+</html>
