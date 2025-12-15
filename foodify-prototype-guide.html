@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodify – Guide du Prototype</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">Food<span>ify</span></div>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="foodify-prototype-guide.html">Prototype Guide</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero-container">
+    <div>
+      <p class="hero-intro">UI/UX Case Study</p>
+      <h1 class="hero-title smaller">Foodify</h1>
+      <p class="hero-subtitle">Guide du Prototype</p>
+
+      <p class="hero-description">
+        Ce guide présente le prototype Foodify et explique le parcours utilisateur
+        à travers les écrans clés de l’application mobile.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Guide Prototype ===== -->
+<section class="section section-alt">
+  <div class="container">
+
+    <h2 class="section-title">Parcours Utilisateur</h2>
+    <p class="section-subtitle">
+      Le parcours a été conçu pour permettre à l’utilisateur de commander
+      rapidement un repas de manière simple et fluide.
+    </p>
+
+    <!-- 1 -->
+    <div class="case-block" style="margin-top:2.5rem;">
+      <h4>1. Connexion / Inscription</h4>
+      <p>
+        L’utilisateur accède à l’application via plusieurs méthodes
+        (Facebook, Google, Apple ou numéro de téléphone) afin de réduire
+        les frictions à l’entrée.
+      </p>
+
+      <div class="image-row">
+        <img src="images/01-login.png" class="case-image" alt="Login Foodify">
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>2. Écran d’accueil – Restaurants</h4>
+      <p>
+        L’écran Home affiche les restaurants populaires proches de l’utilisateur,
+        avec une barre de recherche et des filtres par catégories.
+      </p>
+
+      <div class="image-row">
+        <img src="images/02-home.png" class="case-image" alt="Home Foodify">
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>3. Page Restaurant</h4>
+      <p>
+        L’utilisateur consulte les informations du restaurant, les avis,
+        les promotions et navigue entre les catégories de plats.
+      </p>
+
+      <div class="image-row">
+        <img src="images/03-restaurant.png" class="case-image" alt="Restaurant Foodify">
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>4. Détails du Plat</h4>
+      <p>
+        Cette étape permet de visualiser le plat, choisir la cuisson,
+        ajuster la quantité et ajouter le produit au panier.
+      </p>
+
+      <div class="image-row">
+        <img src="images/04-product.png" class="case-image" alt="Produit Foodify">
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>5. Panier (Order)</h4>
+      <p>
+        Le panier récapitule les articles sélectionnés, permet
+        de modifier les quantités et affiche le prix total.
+      </p>
+
+      <div class="image-row">
+        <img src="images/05-order.png" class="case-image" alt="Panier Foodify">
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>6. Checkout – Livraison</h4>
+      <p>
+        L’utilisateur choisit l’adresse, le temps de livraison
+        et ajoute éventuellement des instructions ou un code promo.
+      </p>
+
+      <div class="image-row">
+        <img src="images/06-checkout.png" class="case-image" alt="Checkout Foodify">
+      </div>
+    </div>
+
+    
+
+    <!-- 7 -->
+    <div class="case-block" style="margin-top:1.5rem;">
+      <h4>7. Paiement</h4>
+      <p>
+        L’utilisateur finalise la commande en sélectionnant
+        un moyen de paiement sécurisé.
+      </p>
+
+      <div class="image-row">
+        <img src="images/08-payment.png" class="case-image" alt="Paiement Foodify">
+      </div>
+    </div>
+
+    <!-- Figma -->
+    <div class="case-block" style="margin-top:2rem;">
+      <h4>Prototype interactif (Figma)</h4>
+      <p>
+        Le prototype interactif permet de tester l’ensemble du parcours utilisateur
+        comme dans une application réelle.
+      </p>
+
+      <div class="prototype-embed">
+        <iframe
+          src="https://www.figma.com/embed?embed_host=share&url=LIEN_DU_PROTO_FIGMA"
+          allowfullscreen>
+        </iframe>
+        <p class="embed-note">
+          Prototype Foodify – conçu sur Figma
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-container">
+    <p>© <span id="year"></span> Rokaya El Maaroufi</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("navToggle").onclick = () =>
+    document.getElementById("navMenu").classList.toggle("open");
+</script>
+
+</body>
+</html>
